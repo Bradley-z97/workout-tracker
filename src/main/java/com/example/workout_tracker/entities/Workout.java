@@ -1,4 +1,4 @@
-package com.example.workout_tracker.Entities;
+package com.example.workout_tracker.entities;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;
@@ -12,7 +12,8 @@ public class Workout {
 
     private String title;
     private LocalDate date;
-    private String exercise;
+    private String muscleGroup;
+    private String notes;
 
     public Long getId() {
         return this.id;
@@ -34,11 +35,19 @@ public class Workout {
         this.date = date;
     }
 
-    public String getExercise() {
-        return this.exercise;
+    public String getMuscleGroup() {
+        return this.muscleGroup;
     }
 
-    public void setExercise(String exercise) {
-        this.exercise = exercise;
+    public void setMuscleGroup(String muscleGroup) {
+        this.muscleGroup = muscleGroup;
+    }
+
+    public String getNotes() {
+        return this.notes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
     }
 }
