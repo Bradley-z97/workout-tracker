@@ -49,5 +49,4 @@ public class WorkoutController {
     public void deleteWorkout(@PathVariable Long id) {
         workoutService.deleteWorkout(id);
     }
-
 }
